@@ -74,8 +74,8 @@ nz = 30
 
 k_pivot = 0.05
 
-# bbn = '/home/harry/Desktop/class/bbn/sBBN.dat'
-bbn = '/mnt/zfsusers/phys2286/class/external/bbn/sBBN.dat'
+bbn = '/home/harry/Desktop/class/bbn/sBBN.dat'
+# bbn = '/mnt/zfsusers/phys2286/class/external/bbn/sBBN.dat'
 # -----------------------------------------------------------------------------
 # folders and files
 
