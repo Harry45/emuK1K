@@ -91,14 +91,6 @@ class pkclass(cr.nzDist):
 
         """
 
-        # Calculate the 3D matter power spectrum based on the emulator setting file
-
-        # Args:
-        #     parameters (dict): inputs to calculate the matter power spectrum
-
-        # Returns:
-        #     np.ndarray: the 3D matter power spectrum
-
         # baryon feedback
         bf = cf.bar_fed(self.k_grid / parameters['h'], self.z_grid, a_bary)
 

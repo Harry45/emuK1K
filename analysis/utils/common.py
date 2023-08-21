@@ -23,7 +23,6 @@ def block_print():
 def enable_print():
     sys.stdout = sys.__stdout__
 
-
 def subset_dict(d: dict, keys: list) -> dict:
     """Create a subset dictionary given an extended dictionary
 

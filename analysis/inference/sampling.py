@@ -102,6 +102,6 @@ class mcmc(lk.sampling_dist):
         del self.theory_module
 
         if sampler_name:
-            hp.store_pkl_file(sampler, 'samples', sampler_name)
+            hp.pickle_save(sampler, 'samples', sampler_name)
 
         return sampler

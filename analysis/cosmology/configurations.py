@@ -7,9 +7,7 @@
 """Base configurations for the likelihood"""
 
 import os
-from typing import Tuple
 from scipy.linalg import cholesky
-import numpy as np
 import cosmosis.runtime.module as crm
 import cosmosis.datablock
 

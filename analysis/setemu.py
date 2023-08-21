@@ -128,6 +128,11 @@ nzbins = 5
 # for fiducial KV450 analysis: 120
 nzmax = 120
 
+# whether to sample the redshift distributions
+# can be done for grouping method
+# for SOM, only the mean is available
+nz_sample = True
+
 # you can choose here any of the scipy.interpolate.interp1d types of interpolation
 # (i.e. 'linear', 'nearest', 'zero', 'slinear', 'quadratic', 'cubic', 'previous',
 # 'next' in SciPy v1.1.0) for the n(z) interpolation ('linear' is recommended)

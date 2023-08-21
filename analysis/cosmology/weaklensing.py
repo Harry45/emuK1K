@@ -13,7 +13,6 @@ import numpy as np
 import setemu as se
 import cosmology.classcompute as cc
 import cosmology.cosmofuncs as cf
-import cosmology.redshift as cr
 import utils.common as uc
 
 
@@ -144,7 +143,7 @@ class spectra(cc.pkclass):
         pk, quant = self.get_matter_power_spectrum(cosmology, a_bary)
 
         # get the new n(z) and their normalisation when using SOM
-        pz, pz_norm = self.shift_som(shifts)
+        pz, pz_norm = self.shift_redshifts(shifts, sample=se.nz_sample)
 
         # Jacobian : calculate the source distribution (in terms of the comoving radial distance)
         pchi = pz * (quant['dzdr'][:, np.newaxis] / pz_norm)

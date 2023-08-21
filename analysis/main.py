@@ -7,9 +7,12 @@
 # Main script for running MCMC
 import inference.sampling as sm
 
-MCMC = sm.mcmc('som', 'PeeE', True)
-MCMC.posterior_sampling('Experiment_3_chain_24_10000')
+# MCMC = sm.mcmc('som', 'PeeE', True)
+# MCMC.posterior_sampling('Experiment_3_chain_24_10000')
 
+
+MCMC = sm.mcmc('grouping', 'PeeE', True)
+MCMC.posterior_sampling('Experiment_4_grouping_samples_chain_24_10000')
 
 # def run_mcmc(fname):
 #     MCMC = sm.mcmc(nz_method='som', stats='PeeE', save=True)
