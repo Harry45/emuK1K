@@ -50,6 +50,8 @@ class sampling_dist(wl.spectra, cg.setup):
         # prior due to the shifts parameters
         self.shift_prior = pr.all_entities(sp.shifts)
 
+        print('LOADED')
+
     def logprior(self, cosmology: dict, nuisance: dict) -> float:
 
         lp = pr.log_prod_pdf(self.cosmo_prior, cosmology)
