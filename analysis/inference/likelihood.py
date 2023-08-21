@@ -90,13 +90,13 @@ class sampling_dist(wl.spectra, cg.setup):
         self.theory_module.execute(datablock)
 
         # silence the scale_cuts module during likelihood evaluations
-        uc.block_print()
+        # uc.block_print()
 
         # apply the scale cuts to the shear power spectra
         self.data_block['scm'].execute(datablock)
 
         # re-enable print statements again
-        uc.enable_print()
+        # uc.enable_print()
 
         # get the theory vector
         theory_vec = np.asarray(datablock['likelihood_bp', 'theory'])
