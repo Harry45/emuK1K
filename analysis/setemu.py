@@ -74,7 +74,8 @@ nz = 30
 
 k_pivot = 0.05
 
-bbn = '/home/harry/Desktop/class/bbn/sBBN.dat'
+# bbn = '/home/harry/Desktop/class/bbn/sBBN.dat'
+bbn = '/mnt/zfsusers/phys2286/class/external/bbn'
 # -----------------------------------------------------------------------------
 # folders and files
 
@@ -82,7 +83,8 @@ bbn = '/home/harry/Desktop/class/bbn/sBBN.dat'
 data_dir = 'data/'
 
 # KCAP (KiDS Cosmology Analysis Pipeline)
-kcap_dir = '/home/harry/lensing/kcap/'
+# kcap_dir = '/home/harry/lensing/kcap/'
+kcap_dir = '/mnt/zfsusers/phys2286/kcap/cosebis'
 
 # band powers data
 bp_data = 'kids_1000.fits'
