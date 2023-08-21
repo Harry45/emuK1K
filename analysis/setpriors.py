@@ -91,4 +91,4 @@ eps = [0.01, 5E-4, 0.01, 0.01, 0.01, 1E-4, 1E-4, 1E-4, 1E-4, 1E-4, 0.1, 0.5]
 n_walkers = 24
 
 # number of samples
-n_samples = 10000
+n_samples = 1 #10000
