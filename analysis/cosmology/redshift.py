@@ -117,22 +117,22 @@ def quantities_nz(z_samples: np.ndarray, heights: np.ndarray) -> dict:
 
     # prevent undersampling of histograms!
     if se.nzmax < (nredshifts - 1):
-        msg1 = "\nYou are trying to integrate at lower resolution than supplied by the n(z) histograms."
-        msg2 = "\nIncrease nzmax greater or equal to {:}. Aborting now"
-        print(msg1)
-        print(msg2.format(nredshifts - 1))
+        # msg1 = "\nYou are trying to integrate at lower resolution than supplied by the n(z) histograms."
+        # msg2 = "\nIncrease nzmax greater or equal to {:}. Aborting now"
+        # print(msg1)
+        # print(msg2.format(nredshifts - 1))
         exit()
 
     elif se.nzmax == (nredshifts - 1):
         nzmax = len(z_samples)
         redshifts = z_samples
-        print("\nIntegrations performed at resolution of histogram.")
+        # print("\nIntegrations performed at resolution of histogram.")
 
     else:
         nzmax = se.nzmax + 1
         redshifts = np.linspace(min(z_samples), max(z_samples), nzmax)
-        msg = "\nIntegration performed at set nzmax={:} resolution."
-        print(msg.format(nzmax - 1))
+        # msg = "\nIntegration performed at set nzmax={:} resolution."
+        # print(msg.format(nzmax - 1))
 
     if redshifts[0] == 0:
         redshifts[0] = 1e-4
