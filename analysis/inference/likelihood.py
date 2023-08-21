@@ -79,12 +79,12 @@ class sampling_dist(wl.spectra, cg.setup):
         # now add the vals for 'ell' and 'bin_1_1', 'bin_2_1', ... 'bin_n_n'
         input_theory['shear_cl'].update({'ell': self.ells})
 
+        print('Calculating theory')
+
         # add the keys and the total shear power spectrum
         input_theory['shear_cl'].update(dict(zip(keys, total_shear)))
 
         datablock = cg.dict_to_datablock(input_theory)
-
-        print('DATABLOCK')
 
         # excecute the data block
         self.theory_module.execute(datablock)
