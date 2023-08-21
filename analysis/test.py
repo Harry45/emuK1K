@@ -10,7 +10,7 @@ class_args = {'z_max_pk': 2.0,
                         #    'halofit_k_per_decade': se.halofit_k_per_decade,
                         #    'halofit_sigma_precision': se.halofit_sigma_precision,
                         #    'k_pivot': se.k_pivot,
-                        #    'sBBN file': se.bbn
+                           'sBBN file': se.bbn
                            }
 
 
