@@ -70,13 +70,13 @@ class setup(object):
         if hasattr(se, 'ell_bin_file'):
             config_theory.update({'l_min_l_max_file': se.ell_bin_file})
 
+        print('Creating theory module')
         # needs to point down to one of the '.so' files in '../kcap/cosebis/':
         fname = os.path.join(se.kcap_dir, 'cosebis/libbandpower.so')
 
         # set up the theory module
         theory_module = crm.Module(module_name='bandpowers', file_path=fname)
         theory_module.setup(dict_to_datablock(config_theory))
-
         return theory_module
 
     def apply_scale_cut(self, save: bool = True) -> dict:
