@@ -99,8 +99,6 @@ class sampling_dist(wl.spectra, cg.setup):
         # get the theory vector
         theory_vec = np.asarray(datablock['likelihood_bp', 'theory'])
 
-
-
         return theory_vec
 
     def bp_theory_calc(self, cosmology: dict, shifts: dict, nuisance: dict) -> np.ndarray:
