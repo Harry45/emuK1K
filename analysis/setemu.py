@@ -84,7 +84,7 @@ data_dir = 'data/'
 
 # KCAP (KiDS Cosmology Analysis Pipeline)
 # kcap_dir = '/home/harry/lensing/kcap/'
-kcap_dir = '/mnt/zfsusers/phys2286/kcap/cosebis'
+kcap_dir = '/mnt/zfsusers/phys2286/kcap/'
 
 # band powers data
 bp_data = 'kids_1000.fits'
